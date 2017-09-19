@@ -7,4 +7,4 @@ Github API only returns 1000 files, so the files are put into folders, up to 300
 
 You can batch import these using this script:
 
-https://github.com/nZEDb/nZEDb/blob/master/cli/data/predb_import_daily_batch.php
+https://github.com/nZEDb/nZEDb/blob/0.x/cli/data/predb_import_daily_batch.php
