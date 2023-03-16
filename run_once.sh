@@ -6,10 +6,7 @@ echo "Importing Pre Dumps into /tmp"
 git clone https://github.com/nZEDb/nZEDbPre_Dumps.git
 
 echo "Uncompressing GZIPs"
-for dir in /tmp/nZEDbPre_Dumps/dumps/*; do
-        [ -e "$dir" ] || continue
-        cd $dir && gunzip ./*
-done
+find /tmp/nZEDbPre_Dumps/dumps/ -name "*.csv.gz" -exec gunzip "{}" \;
 
 cd /tmp
 
